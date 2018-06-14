@@ -1,0 +1,32 @@
+comandos
+========
+- git config --global user.name "Raul Valladares"
+- git config --global user.email lalorvp@gmail.com
+- git config --global color.ui true
+- git config --list (checkear la configuracion)
+
+- git init primer_repo (crear repositorio)
+
+- git rm --cached nombre_de_archivo (regresa del working staging al working directory)
+
+- git commit -m "inicializar nuestro landing" (confirmar cambio, pasar del staging al repositorio)
+- git commit -amend (agrega nuevos cambios del staging al ultimo commit)
+
+ETIQUETAS
+=========
+- git tag -a 0.5 -m "version estable del proyecto" (con anotacion)
+- git tag 0.3 000675790aab26c00709ec24288e410b41458add (sin anotacion, le pones al commit q deseas o no le pones para q coja el ultimo)
+- git tag -l (listar todas las etiquetas)
+- git tag -d 1.0 (eliminar tag)
+
+- git log (rastro de los commit)
+- git log --oneline (en una sola linea)
+- git log --graph ()
+
+- git diff [commit1] [commit2]
+
+# quita commit hasta antes, dejando los archvos en staging
+- git reset --soft [commit1]
+
+# quita commit hasta antes, dejando los archvos en working
+- git reset --mixed [commit1]
